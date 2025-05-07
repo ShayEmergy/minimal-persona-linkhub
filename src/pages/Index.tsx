@@ -2,7 +2,7 @@
 import React from "react";
 import ProfileSection from "@/components/ProfileSection";
 import ContentSection from "@/components/ContentSection";
-import { profileData, talks, blogPosts, podcasts } from "@/data/portfolioData";
+import { profileData, talks, blogPosts, audio } from "@/data/portfolioData";
 
 const Index = () => {
   return (
@@ -30,10 +30,10 @@ const Index = () => {
         
         <div className="border-t border-border">
           <ContentSection 
-            title="Podcasts" 
+            title="Audio" 
             type="podcast" 
-            items={podcasts} 
-            id="podcasts"
+            items={audio} 
+            id="audio"
           />
         </div>
         

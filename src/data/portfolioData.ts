@@ -30,6 +30,13 @@ export const talks: ContentItem[] = [
     description: "A deep dive into Kubernetes network security approaches and implementations.",
   },
   {
+    id: "talk-5",
+    title: "Can Your Kubernetes Network Handle the Heat? Building Resilience with AI Chaos",
+    url: "https://youtu.be/2oTtpRpv3M8?si=0RBHxFJhIC22NvBI",
+    date: "November 2024",
+    description: "Testing and building resilient Kubernetes networks using AI-driven chaos engineering.",
+  },
+  {
     id: "talk-2",
     title: "Architecting Istio for Large-Scale Deployments: R&D and Service Mesh Grow Together",
     url: "https://www.youtube.com/watch?v=GNi9ZJFuups",
@@ -49,13 +56,6 @@ export const talks: ContentItem[] = [
     url: "https://www.youtube.com/watch?v=S5QsqEb8wec",
     date: "November 2024",
     description: "Navigating the complexities of Kubernetes networking APIs.",
-  },
-  {
-    id: "talk-5",
-    title: "Can Your Kubernetes Network Handle the Heat? Building Resilience with AI Chaos",
-    url: "https://youtu.be/2oTtpRpv3M8?si=0RBHxFJhIC22NvBI",
-    date: "November 2024",
-    description: "Testing and building resilient Kubernetes networks using AI-driven chaos engineering.",
   },
   {
     id: "talk-6",
@@ -102,7 +102,7 @@ export const blogPosts: ContentItem[] = [
   },
 ];
 
-export const podcasts: ContentItem[] = [
+export const audio: ContentItem[] = [
   {
     id: "podcast-1",
     title: "Kubernetes Ingress & Gateway API Updates, with Lior Lieberman",
