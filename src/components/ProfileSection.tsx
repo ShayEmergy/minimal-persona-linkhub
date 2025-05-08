@@ -1,6 +1,7 @@
 
 import { Avatar } from "@/components/ui/avatar";
 import { ProfileData } from "@/data/portfolioData";
+import { Github, Linkedin } from "lucide-react";
 
 interface ProfileSectionProps {
   data: ProfileData;
@@ -21,6 +22,36 @@ const ProfileSection = ({ data }: ProfileSectionProps) => {
       <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed mx-auto">
         {data.bio}
       </p>
+      
+      <div className="flex gap-4 mt-6">
+        <a 
+          href="https://github.com/LiorLieberman" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="p-2 rounded-full hover:bg-muted transition-colors"
+          aria-label="GitHub profile"
+        >
+          <Github className="h-6 w-6" />
+        </a>
+        <a 
+          href="https://linkedin.com/in/lior-lieberman/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="p-2 rounded-full hover:bg-muted transition-colors"
+          aria-label="LinkedIn profile"
+        >
+          <Linkedin className="h-6 w-6" />
+        </a>
+      </div>
+      
+      <div className="mt-8 max-w-2xl mx-auto">
+        <h2 className="text-xl font-semibold mb-4">Professional Activities</h2>
+        <ul className="flex flex-col gap-2 items-center">
+          <li>Program committee (KubeCon London, KubeCon Japan, KubeCon China, PlatforMa IL)</li>
+          <li>CNCF mentorship</li>
+          <li>BCS fellow</li>
+        </ul>
+      </div>
     </section>
   );
 };
