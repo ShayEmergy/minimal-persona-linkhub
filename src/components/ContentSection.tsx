@@ -1,7 +1,7 @@
 
 import { ContentItem as ContentItemType } from "@/data/portfolioData";
 import ContentItem from "./ContentItem";
-import { BookText, Mic, MessageCircle } from "lucide-react";
+import { FileText, Mic, Presentation } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ContentSectionProps {
@@ -13,8 +13,8 @@ interface ContentSectionProps {
 
 const ContentSection = ({ title, type, items, id }: ContentSectionProps) => {
   const icons = {
-    talk: <MessageCircle className="h-5 w-5" />,
-    blog: <BookText className="h-5 w-5" />,
+    talk: <Presentation className="h-5 w-5" />,
+    blog: <FileText className="h-5 w-5" />,
     podcast: <Mic className="h-5 w-5" />,
   };
 
