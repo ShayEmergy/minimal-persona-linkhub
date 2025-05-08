@@ -43,15 +43,6 @@ const ProfileSection = ({ data }: ProfileSectionProps) => {
           <Linkedin className="h-6 w-6" />
         </a>
       </div>
-      
-      <div className="mt-8 max-w-2xl mx-auto">
-        <h2 className="text-xl font-semibold mb-4">Professional Activities</h2>
-        <ul className="flex flex-col gap-2 items-center">
-          <li>Program committee (KubeCon London, KubeCon Japan, KubeCon China, PlatforMa IL)</li>
-          <li>CNCF mentorship</li>
-          <li>BCS fellow</li>
-        </ul>
-      </div>
     </section>
   );
 };
