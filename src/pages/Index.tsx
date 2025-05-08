@@ -53,17 +53,12 @@ const Index = () => {
             </div>
             <div className="space-y-1 divide-y divide-border">
               {professionalActivities.map((activity, index) => (
-                <a 
+                <div 
                   key={index} 
                   className="block py-4 px-2 -mx-2 rounded-md hover:bg-secondary transition-colors"
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
                 >
-                  <div className="flex items-center justify-between">
-                    <p className="text-base">{activity}</p>
-                    <span className="text-muted-foreground">&rarr;</span>
-                  </div>
-                </a>
+                  <p className="text-base">{activity}</p>
+                </div>
               ))}
             </div>
           </section>
