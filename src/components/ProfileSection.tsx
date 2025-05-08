@@ -28,19 +28,19 @@ const ProfileSection = ({ data }: ProfileSectionProps) => {
           href="https://github.com/LiorLieberman" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="p-2 rounded-full hover:bg-muted transition-colors"
+          className="p-2 rounded-full hover:bg-secondary transition-colors"
           aria-label="GitHub profile"
         >
-          <Github className="h-6 w-6" />
+          <Github className="h-5 w-5" strokeWidth={1.5} />
         </a>
         <a 
           href="https://linkedin.com/in/lior-lieberman/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="p-2 rounded-full hover:bg-muted transition-colors"
+          className="p-2 rounded-full hover:bg-secondary transition-colors"
           aria-label="LinkedIn profile"
         >
-          <Linkedin className="h-6 w-6" />
+          <Linkedin className="h-5 w-5" strokeWidth={1.5} />
         </a>
       </div>
     </section>

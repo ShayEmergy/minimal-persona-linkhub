@@ -4,7 +4,7 @@ import ProfileSection from "@/components/ProfileSection";
 import ContentSection from "@/components/ContentSection";
 import { profileData, talks, blogPosts, audio } from "@/data/portfolioData";
 import { Separator } from "@/components/ui/separator";
-import { Award } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 const Index = () => {
   const professionalActivities = [
@@ -48,18 +48,22 @@ const Index = () => {
         <div className="border-t border-border">
           <section id="professional-activities" className="py-12 px-4 md:px-8 max-w-3xl mx-auto">
             <div className="flex items-center gap-2 mb-6">
-              <span className="text-primary"><Award className="h-5 w-5" /></span>
+              <span className="text-primary"><Briefcase className="h-5 w-5" /></span>
               <h2 className="text-2xl font-semibold tracking-tight">Professional Activities</h2>
             </div>
-            <div className="space-y-3 mt-4">
+            <div className="space-y-1 divide-y divide-border">
               {professionalActivities.map((activity, index) => (
-                <div 
+                <a 
                   key={index} 
-                  className="flex items-start space-x-3 py-2 px-3 -mx-2 rounded-md hover:bg-secondary/50 transition-colors"
+                  className="block py-4 px-2 -mx-2 rounded-md hover:bg-secondary transition-colors"
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <span className="text-primary font-medium">•</span>
-                  <p className="text-base">{activity}</p>
-                </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-base">{activity}</p>
+                    <span className="text-muted-foreground">&rarr;</span>
+                  </div>
+                </a>
               ))}
             </div>
           </section>
